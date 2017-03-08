@@ -20,7 +20,7 @@ namespace NavajaHectorSala.Fibonacci
         string fibonacci(int numeroSucesiones)
         {
             int numeroAnterior, numeroSiguiente, numeroSuma;
-            string texto = "0 ";
+            string texto = "";
 
             numeroAnterior = 1;
             numeroSiguiente = 1;
@@ -32,7 +32,7 @@ namespace NavajaHectorSala.Fibonacci
                 numeroAnterior = numeroSiguiente;
                 numeroSiguiente = numeroSuma;
                 numeroSuma = numeroAnterior + numeroSiguiente;
-                texto = texto + " + " + numeroSuma;
+                texto = texto  + numeroSuma + " + ";
             }
 
             return texto;
@@ -41,10 +41,19 @@ namespace NavajaHectorSala.Fibonacci
         private void button1_Click(object sender, EventArgs e)
         {
             int numeroSucesiones;
+            bool correcto;
 
-            numeroSucesiones = int.Parse(tNum.Text);
+            correcto = int.TryParse(tNum.Text, out numeroSucesiones);
 
-            MessageBox.Show(fibonacci(numeroSucesiones)+"");
+            if (correcto)
+            {
+                MessageBox.Show(fibonacci(numeroSucesiones) + "");
+            }
+            else
+            {
+                MessageBox.Show("No es un numero");
+            }
+            
         }
 
         private void tnum_TextChanged(object sender, EventArgs e)

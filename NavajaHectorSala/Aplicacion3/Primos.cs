@@ -49,11 +49,22 @@ namespace NavajaHectorSala.Primos
         private void button1_Click(object sender, EventArgs e)
         {
             int num1, num2;
+            bool correcto, correcto2;
 
-            num1 = int.Parse(tNum1.Text);
-            num2 = int.Parse(tNum2.Text);
+            correcto = int.TryParse(tNum1.Text, out num1);
 
-            MessageBox.Show(sacarPrimos(num1, num2));
+            correcto2 = int.TryParse(tNum2.Text, out num2);
+
+            if (correcto && correcto2)
+            {
+                MessageBox.Show(sacarPrimos(num1, num2));
+            }
+            else
+            {
+                MessageBox.Show("No es un numero");
+            }
+
+            
         }
 
         private void tNum2_TextChanged(object sender, EventArgs e)

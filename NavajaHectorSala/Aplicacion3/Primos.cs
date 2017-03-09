@@ -10,13 +10,26 @@ using System.Windows.Forms;
 
 namespace NavajaHectorSala.Primos
 {
+    /// <summary>
+    /// Clase que representa una aplicacion que muestra los numeros primos dentro de un rango.
+    /// </summary>
     public partial class Primos : Form
     {
+        /// <summary>
+        /// Constructor de la clase Primos.
+        /// </summary>
         public Primos()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Realiza la operacion para calcular y devolver los numeros
+        /// primos que hay dentro de un rango de dos numeros.
+        /// </summary>
+        /// <param name="num1">Numero inicial del rango.</param>
+        /// <param name="num2">Numero final del rango.</param>
+        /// <returns>Devuelve una cadena de numeros primos.</returns>
         string sacarPrimos(int num1, int num2)
         {
             int n = 2, contador = 0;
@@ -46,6 +59,12 @@ namespace NavajaHectorSala.Primos
             }
             return cadenaPrimos;
         }
+
+        /// <summary>
+        /// Evento que lanza un metodo de la clase Primos.
+        /// </summary>
+        /// <param name="sender">Lanza el evento en el boton button1_Click.</param>
+        /// <param name="e">Si uso.</param>
         private void button1_Click(object sender, EventArgs e)
         {
             int num1, num2;

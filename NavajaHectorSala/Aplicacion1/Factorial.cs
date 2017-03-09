@@ -40,10 +40,10 @@ namespace NavajaHectorSala.Factorial
         }
 
         /// <summary>
-        /// 
+        /// Evento que lanza un metodo de la clase Factorial.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">Lanza el evento en el boton button1_Click.</param>
+        /// <param name="e">Si uso.</param>
         private void button1_Click(object sender, EventArgs e)
         {
             int num;

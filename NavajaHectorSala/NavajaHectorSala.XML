@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NavajaHectorSala</name>
+    </assembly>
+    <members>
+        <member name="T:NavajaHectorSala.Factorial.Factorial">
+            <summary>
+            Clase que representa una aplicacion que realiza el factorial de un numero.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Factorial.Factorial.#ctor">
+            <summary>
+            Constructor de la clase Factorial.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Factorial.Factorial.iterativoFactorial(System.Int32)">
+            <summary>
+            Realiza la factorizacion de un numero entero.
+            </summary>
+            <param name="num">Valor a partir del cual se realiza la factorizacion.</param>
+            <returns>Devuelve el resultado de la factorizacion.</returns>
+        </member>
+        <member name="M:NavajaHectorSala.Factorial.Factorial.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que lanza un metodo de la clase Factorial.
+            </summary>
+            <param name="sender">Lanza el evento en el boton button1_Click.</param>
+            <param name="e">Si uso.</param>
+        </member>
+        <member name="F:NavajaHectorSala.Factorial.Factorial.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Factorial.Factorial.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:NavajaHectorSala.Factorial.Factorial.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:NavajaHectorSala.Fibonacci.Fibonacci">
+            <summary>
+            Clase que representa una aplicacion que muestra la sucesion de fibonacci.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Fibonacci.Fibonacci.#ctor">
+            <summary>
+            Constructor de la clase Fibonacci.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Fibonacci.Fibonacci.fibonacci(System.Int32)">
+            <summary>
+            Realiza la operacion de sumas sucesivas que conforman fibonacci devolviendo
+            tantos numeros de la sucesión como le indicamos por parametro.
+            </summary>
+            <param name="numeroSucesiones">Numero de veces que realizara las sumas sucesivas.</param>
+            <returns>Devuelve una cadena con los numeros de la sucesion de Fibonacci.</returns>
+        </member>
+        <member name="M:NavajaHectorSala.Fibonacci.Fibonacci.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que lanza un metodo de la clase Fibonacci.
+            </summary>
+            <param name="sender">Lanza el evento en el boton button1_Click</param>
+            <param name="e">Si uso</param>
+        </member>
+        <member name="F:NavajaHectorSala.Fibonacci.Fibonacci.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Fibonacci.Fibonacci.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:NavajaHectorSala.Fibonacci.Fibonacci.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:NavajaHectorSala.Primos.Primos">
+            <summary>
+            Clase que representa una aplicacion que muestra los numeros primos dentro de un rango.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Primos.Primos.#ctor">
+            <summary>
+            Constructor de la clase Primos.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Primos.Primos.sacarPrimos(System.Int32,System.Int32)">
+            <summary>
+            Realiza la operacion para calcular y devolver los numeros
+            primos que hay dentro de un rango de dos numeros.
+            </summary>
+            <param name="num1">Numero inicial del rango.</param>
+            <param name="num2">Numero final del rango.</param>
+            <returns>Devuelve una cadena de numeros primos.</returns>
+        </member>
+        <member name="M:NavajaHectorSala.Primos.Primos.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que lanza un metodo de la clase Primos.
+            </summary>
+            <param name="sender">Lanza el evento en el boton button1_Click.</param>
+            <param name="e">Si uso.</param>
+        </member>
+        <member name="F:NavajaHectorSala.Primos.Primos.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Primos.Primos.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:NavajaHectorSala.Primos.Primos.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:NavajaHectorSala.Palindromo.Palindromo">
+            <summary>
+            Clase que representa una aplicacion que confirma si una cadena de texto es palindromica.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Palindromo.Palindromo.#ctor">
+            <summary>
+            Constructor de la clase Palindromo.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Palindromo.Palindromo.comprobarPalindromo(System.String)">
+            <summary>
+            Recorre la cadena posicion a posicion comparandolas desde el principio
+            y el desde el final sucesivamente.
+            </summary>
+            <param name="cadena">Cadena de caracteres.</param>
+            <returns>Devuelve true o false en funcion de si la cadena es palindromica
+            o no</returns>
+        </member>
+        <member name="M:NavajaHectorSala.Palindromo.Palindromo.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que lanza un metodo de la clase Palindromo.
+            </summary>
+            <param name="sender">Lanza el evento en el boton button1_Click.</param>
+            <param name="e">Si uso.</param>
+        </member>
+        <member name="F:NavajaHectorSala.Palindromo.Palindromo.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Palindromo.Palindromo.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:NavajaHectorSala.Palindromo.Palindromo.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:NavajaHectorSala.Principal">
+            <summary>
+            Clase que representa una aplicacion con cuatro botones que abren un formulario cada uno.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Principal.#ctor">
+            <summary>
+            Constructor de la clase Principal.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Principal.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que lanza el formulario Factorial.
+            </summary>
+            <param name="sender">Lanza el evento en el boton button1_Click.</param>
+            <param name="e">Si uso.</param>
+        </member>
+        <member name="M:NavajaHectorSala.Principal.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que lanza el formulario Fibonacci.
+            </summary>
+            <param name="sender">Lanza el evento en el boton button2_Click.</param>
+            <param name="e">Si uso.</param>
+        </member>
+        <member name="M:NavajaHectorSala.Principal.button3_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que lanza el formulario Primos.
+            </summary>
+            <param name="sender">Lanza el evento en el boton button3_Click.</param>
+            <param name="e">Si uso.</param>
+        </member>
+        <member name="M:NavajaHectorSala.Principal.button4_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento que lanza el formulario Palindromo.
+            </summary>
+            <param name="sender">Lanza el evento en el boton button4_Click.</param>
+            <param name="e">Si uso.</param>
+        </member>
+        <member name="F:NavajaHectorSala.Principal.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Principal.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:NavajaHectorSala.Principal.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:NavajaHectorSala.Program.Main">
+            <summary>
+            Punto de entrada principal para la aplicación.
+            </summary>
+        </member>
+        <member name="T:NavajaHectorSala.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:NavajaHectorSala.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:NavajaHectorSala.Properties.Resources.Culture">
+            <summary>
+              Invalida la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos usando esta clase de recursos fuertemente tipados.
+            </summary>
+        </member>
+    </members>
+</doc>

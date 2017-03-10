@@ -32,11 +32,9 @@ namespace NavajaHectorSala.Palindromo
         /// o no</returns>
         bool comprobarPalindromo(string cadena)
         {
-            
             int numLetras, i = 0;
             bool palindromica = true;
 
-            
             numLetras = cadena.Length - 1;
 
             while (i <= numLetras && palindromica)//i < texto.Length/2

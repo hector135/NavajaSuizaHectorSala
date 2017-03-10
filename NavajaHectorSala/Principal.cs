@@ -30,8 +30,6 @@ namespace NavajaHectorSala
         /// <param name="e">Si uso.</param>
         private void button1_Click(object sender, EventArgs e)
         {
-            // namespace.subnamespace.nombreformulario = new namespace.subnamespace.nombreformulario();
-
             NavajaHectorSala.Factorial.Factorial Formulario = new NavajaHectorSala.Factorial.Factorial();
             Formulario.ShowDialog();
         }

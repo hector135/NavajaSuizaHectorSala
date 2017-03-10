@@ -32,10 +32,12 @@ namespace NavajaHectorSala.Primos
         /// <returns>Devuelve una cadena de numeros primos.</returns>
         string sacarPrimos(int num1, int num2)
         {
-            int n = 2, contador = 0;
+            int n, contador;
             bool primo;
             string cadenaPrimos;
 
+            n = 2;
+            contador = 0;
             primo = true;
             cadenaPrimos = "";
 
@@ -71,7 +73,6 @@ namespace NavajaHectorSala.Primos
             bool correcto, correcto2;
 
             correcto = int.TryParse(tNum1.Text, out num1);
-
             correcto2 = int.TryParse(tNum2.Text, out num2);
 
             if (correcto && correcto2)
@@ -82,8 +83,6 @@ namespace NavajaHectorSala.Primos
             {
                 MessageBox.Show("No es un numero");
             }
-
-            
         }
 
         private void tNum2_TextChanged(object sender, EventArgs e)

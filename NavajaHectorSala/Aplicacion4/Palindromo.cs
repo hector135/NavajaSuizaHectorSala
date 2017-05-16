@@ -13,6 +13,7 @@ namespace NavajaHectorSala.Palindromo
     /// <summary>
     /// Clase que representa una aplicacion que confirma si una cadena de texto es palindromica.
     /// </summary>
+    /// <remarks>Pese a llamarlo palindromo podemos introducir todo tipo de caracteres ademas de letras.</remarks>
     public partial class Palindromo : Form
     {
         /// <summary>
@@ -54,6 +55,7 @@ namespace NavajaHectorSala.Palindromo
                 i++;
                 numLetras--;
             }
+
             return palindromica;
         }
 

@@ -27,6 +27,7 @@ namespace NavajaHectorSala.Fibonacci
         /// Realiza la operacion de sumas sucesivas que conforman fibonacci devolviendo
         /// tantos numeros de la sucesión como le indicamos por parametro.
         /// </summary>
+        /// <remarks>No se han de utilizar numeros negativos.</remarks>
         /// <param name="numeroSucesiones">Numero de veces que realizara las sumas sucesivas.</param>
         /// <returns>Devuelve una cadena con los numeros de la sucesion de Fibonacci.</returns>
         string fibonacci(int numeroSucesiones)

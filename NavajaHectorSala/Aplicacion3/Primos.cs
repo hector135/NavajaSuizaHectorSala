@@ -65,6 +65,7 @@ namespace NavajaHectorSala.Primos
         /// <summary>
         /// Evento que lanza un metodo de la clase Primos.
         /// </summary>
+        /// <remarks>Se debe introducir el numero más pequeño en el primer textbox y el mas grande en el segundo.</remarks>
         /// <param name="sender">Lanza el evento en el boton button1_Click.</param>
         /// <param name="e">Si uso.</param>
         private void button1_Click(object sender, EventArgs e)

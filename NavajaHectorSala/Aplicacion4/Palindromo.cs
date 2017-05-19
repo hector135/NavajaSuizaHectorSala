@@ -25,57 +25,36 @@ namespace NavajaHectorSala.Palindromo
         }
 
         /// <summary>
-        /// Recorre la cadena posicion a posicion comparandolas desde el principio
-        /// y el desde el final sucesivamente.
-        /// </summary>
-        /// <param name="cadena">Cadena de caracteres.</param>
-        /// <returns>Devuelve true o false en funcion de si la cadena es palindromica
-        /// o no</returns>
-        bool comprobarPalindromo(string cadena)
-        {
-            int numLetras, i = 0;
-            bool palindromica = true;
-
-            numLetras = cadena.Length - 1;
-
-            while (i <= numLetras && palindromica)//i < texto.Length/2
-            {
-                if (cadena[i] == ' ')
-                {
-                    i++;
-                }
-                if (cadena[numLetras] == ' ')
-                {
-                    numLetras--;
-                }
-                if (cadena[i] != cadena[numLetras])
-                {
-                    palindromica = false;
-                }
-                i++;
-                numLetras--;
-            }
-
-            return palindromica;
-        }
-
-        /// <summary>
         /// Evento que lanza un metodo de la clase Palindromo.
         /// </summary>
         /// <param name="sender">Lanza el evento en el boton button1_Click.</param>
         /// <param name="e">Si uso.</param>
         private void button1_Click(object sender, EventArgs e)
         {
-            string cadena;
-            cadena = tTexto.Text;
+            string cadenaTexto;
+            cadenaTexto = tTexto.Text;
 
-            if (comprobarPalindromo(cadena))
+            try
             {
-                MessageBox.Show("Palindromica");
+                if (cadenaTexto == "")
+                {
+                    MessageBox.Show("La cadena está vacia");
+                }
+                else
+                {
+                    if (LogicaPalindromo.comprobarPalindromo(cadenaTexto))
+                    {
+                        MessageBox.Show("Palindromica");
+                    }
+                    else
+                    {
+                        MessageBox.Show("No Palindromica");
+                    }
+                }
             }
-            else
+            catch (Exception Exception)
             {
-                MessageBox.Show("No Palindromica");
+                MessageBox.Show("Se ha producido un error" + Exception.Message);
             }
         }
     }

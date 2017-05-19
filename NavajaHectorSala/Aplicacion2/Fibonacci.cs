@@ -24,52 +24,34 @@ namespace NavajaHectorSala.Fibonacci
         }
 
         /// <summary>
-        /// Realiza la operacion de sumas sucesivas que conforman fibonacci devolviendo
-        /// tantos numeros de la sucesión como le indicamos por parametro.
-        /// </summary>
-        /// <remarks>No se han de utilizar numeros negativos.</remarks>
-        /// <param name="numeroSucesiones">Numero de veces que realizara las sumas sucesivas.</param>
-        /// <returns>Devuelve una cadena con los numeros de la sucesion de Fibonacci.</returns>
-        string fibonacci(int numeroSucesiones)
-        {
-            int numeroAnterior, numeroSiguiente, numeroSuma;
-            string texto;
-
-            numeroAnterior = 1;
-            numeroSiguiente = 1;
-            numeroSuma = 0;
-            texto = "";
-
-            for (int i = 0; i < numeroSucesiones; i++)
-            {
-
-                numeroAnterior = numeroSiguiente;
-                numeroSiguiente = numeroSuma;
-                numeroSuma = numeroAnterior + numeroSiguiente;
-                texto = texto  + numeroSuma + " + ";
-            }
-            return texto;
-        }
-
-        /// <summary>
         /// Evento que lanza un metodo de la clase Fibonacci.
         /// </summary>
         /// <param name="sender">Lanza el evento en el boton button1_Click</param>
         /// <param name="e">Si uso</param>
         private void button1_Click(object sender, EventArgs e)
         {
+            LogicaFibonacci fibonacci = new LogicaFibonacci();
             int numeroSucesiones;
             bool correcto;
+            string resultado;
 
             correcto = int.TryParse(tNum.Text, out numeroSucesiones);
 
-            if (correcto)
+            try
             {
-                MessageBox.Show(fibonacci(numeroSucesiones) + "");
+                if (correcto)
+                {
+                    fibonacci.fibonacci(numeroSucesiones, out resultado);
+                    MessageBox.Show(resultado);
+                }
+                else
+                {
+                    MessageBox.Show("No es un numero");
+                }
             }
-            else
+            catch (Exception Exception)
             {
-                MessageBox.Show("No es un numero");
+                MessageBox.Show("Se ha producido un error" + Exception.Message);
             }
         }
 

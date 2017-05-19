@@ -44,9 +44,10 @@
             // 
             // tTexto
             // 
-            this.tTexto.Location = new System.Drawing.Point(71, 66);
+            this.tTexto.Location = new System.Drawing.Point(29, 67);
+            this.tTexto.MaxLength = 30;
             this.tTexto.Name = "tTexto";
-            this.tTexto.Size = new System.Drawing.Size(146, 20);
+            this.tTexto.Size = new System.Drawing.Size(226, 20);
             this.tTexto.TabIndex = 1;
             // 
             // Palindromo

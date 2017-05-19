@@ -36,6 +36,7 @@
             // tNum1
             // 
             this.tNum1.Location = new System.Drawing.Point(56, 52);
+            this.tNum1.MaxLength = 3;
             this.tNum1.Name = "tNum1";
             this.tNum1.Size = new System.Drawing.Size(185, 20);
             this.tNum1.TabIndex = 0;
@@ -43,6 +44,7 @@
             // tNum2
             // 
             this.tNum2.Location = new System.Drawing.Point(56, 107);
+            this.tNum2.MaxLength = 3;
             this.tNum2.Name = "tNum2";
             this.tNum2.Size = new System.Drawing.Size(185, 20);
             this.tNum2.TabIndex = 1;

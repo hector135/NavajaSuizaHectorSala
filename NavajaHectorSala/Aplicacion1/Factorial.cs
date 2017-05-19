@@ -24,41 +24,36 @@ namespace NavajaHectorSala.Factorial
         }
 
         /// <summary>
-        /// Realiza la factorizacion de un numero entero.
-        /// </summary>
-        /// <param name="num">Valor a partir del cual se realiza la factorizacion.</param>
-        /// <returns>Devuelve el resultado de la factorizacion.</returns>
-        int iterativoFactorial(int num)
-        {
-            int resultado = 1;
-
-            for (int i = num; i > 0; i--)
-            {
-                resultado = resultado * i;
-            }
-            return resultado;
-        }
-
-        /// <summary>
         /// Evento que lanza un metodo de la clase Factorial.
         /// </summary>
         /// <param name="sender">Lanza el evento en el boton button1_Click.</param>
         /// <param name="e">Si uso.</param>
         private void button1_Click(object sender, EventArgs e)
         {
-            int num;
+            LogicaFactorial factorial = new LogicaFactorial();
+            int numero, resultado;
+            string mensajeResultado;
             bool correcto;
 
-            correcto = int.TryParse(tNum.Text, out num);
+            correcto = int.TryParse(tNum.Text, out numero);
 
-            if (correcto)
+            try
             {
-                MessageBox.Show(iterativoFactorial(num) + "");
+                if (correcto)
+                {
+                    factorial.iterativoFactorial(numero, out resultado, out mensajeResultado);
+                    MessageBox.Show(mensajeResultado);
+                }
+                else
+                {
+                    MessageBox.Show("No es un numero");
+                }
             }
-            else
+            catch (Exception Exception)
             {
-                MessageBox.Show("No es un numero");
+                MessageBox.Show("Se ha producido un error" + Exception.Message);
             }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
